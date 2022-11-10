@@ -22,4 +22,11 @@ public class UserRegistration {
         Boolean result =validation.checkFirstName("Mumbai");
         Assertions.assertEquals(result,true);
     }
+
+    @Test
+    void given_last_name_should_returnTrue(){
+        UserValidation validation= new UserValidation();
+        Boolean result1 = validation.checkLastName("City");
+        Assertions.assertEquals(result1,true);
+    }
 }
