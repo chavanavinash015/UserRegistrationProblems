@@ -36,4 +36,12 @@ public class UserRegistration {
         Boolean result2 = validation.checkEmail("Mumbacity@gmail.com");
         Assertions.assertEquals(result2,true);
     }
+
+    @Test
+    void given_phone_number_should_returnTrue(){
+        UserValidation validation = new UserValidation();
+        Boolean result3 = validation.checkPhoneNumber("91 9152352304");
+        Assertions.assertEquals(result3,true);
+    }
+
 }
