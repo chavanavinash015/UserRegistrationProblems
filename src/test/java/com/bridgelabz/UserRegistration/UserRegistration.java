@@ -29,4 +29,11 @@ public class UserRegistration {
         Boolean result1 = validation.checkLastName("City");
         Assertions.assertEquals(result1,true);
     }
+
+    @Test
+    void given_email_id_should_returnTrue(){
+        UserValidation validation= new UserValidation();
+        Boolean result2 = validation.checkEmail("Mumbacity@gmail.com");
+        Assertions.assertEquals(result2,true);
+    }
 }
