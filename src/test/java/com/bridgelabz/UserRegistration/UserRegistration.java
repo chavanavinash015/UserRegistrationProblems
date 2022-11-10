@@ -44,4 +44,10 @@ public class UserRegistration {
         Assertions.assertEquals(result3,true);
     }
 
+    @Test
+    void given_password_should_returnTrue(){
+        UserValidation validation = new UserValidation();
+        Boolean passrule1 = validation.checkPassword("bombaycity");
+        Assertions.assertEquals(passrule1, true);
+    }
 }
