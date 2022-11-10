@@ -72,4 +72,10 @@ public class UserRegistration {
         Assertions.assertEquals(passrule4,true);
     }
 
+    @Test
+    void given_emailsamples_should_returnTrue(){
+        UserValidation validation = new UserValidation();
+        Boolean emailSamples = validation.checkEmailSamples("Bombay020@.com");
+        Assertions.assertEquals(emailSamples,true);
+    }
 }
